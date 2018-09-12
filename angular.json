@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/scss/custom.scss"
             ],
             "scripts": []
           },
@@ -50,7 +51,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pet-rescue:build"
+            "browserTarget": "pet-rescue:build",
+            "port": 4300
           },
           "configurations": {
             "production": {
