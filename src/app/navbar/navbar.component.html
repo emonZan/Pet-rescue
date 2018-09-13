@@ -1,18 +1,33 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-    <img src="../assets/image/logo.PNG" style="width: 100px">
-    <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown" ngbDropdown>
-          <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Files</a>
-          <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-            <a class="dropdown-item" href="#">HTML</a>
-            <a class="dropdown-item" href="#">TS</a>
-            <a class="dropdown-item" href="#">JS</a>
+<nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+  <a class="navbar-brand" routerLink="/home">
+    <img src="../assets/image/logo.PNG" width="100" height="50" alt="">
+  </a>
+  <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault"
+    aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link" href="#" id="find-pet" ngbDropdownToggle>Find Pet</a>
+        <div class="dropdown-menu" aria-labelledby="find-pet" ngbDropdownMenu>
+            <a class="dropdown-item" href="#">Cat</a>
+            <a class="dropdown-item" href="#">Dog</a>
+            <a class="dropdown-item" href="#">Others</a>
           </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Volunteer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add-pet">Add Pet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">User Management</a>
+      </li>
+    </ul>
+  </div>
+</nav>

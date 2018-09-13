@@ -11,6 +11,8 @@ import { PetComponent } from './pet/pet.component';
 import { PetCardComponent } from './pet/pet-card/pet-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './shared/component/carousel/carousel.component';
+import { AddPetComponent } from './pet/add-pet/add-pet.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CarouselComponent } from './shared/component/carousel/carousel.componen
     PetComponent,
     PetCardComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    AddPetComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
