@@ -1,17 +1,17 @@
-
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AddPetComponent } from './pet/add-pet/add-pet.component';
 import { NgModule } from '@angular/core';
-import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { Routes, RouterModule } from '@angular/router';
+
+
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'add-pet', component: AddPetComponent },
-    { path: 'admin-login', component: AdminLoginComponent}
+  { path: '', redirectTo: '/pet', pathMatch: 'full' },
+  { path: 'pet', loadChildren: () => import('./pet/pet.module').then(m => m.PetModule) },
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+  { path: 'volunteer', loadChildren: () => import('./volunteer/volunteer.module').then(m => m.VolunteerModule) }
+
 ];
+
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

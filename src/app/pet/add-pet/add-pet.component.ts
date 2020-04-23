@@ -3,10 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-add-pet',
   templateUrl: './add-pet.component.html',
-  styleUrls: ['./add-pet.component.css']
+  styleUrls: ['./add-pet.component.scss']
 })
 export class AddPetComponent implements OnInit {
   urls = new Array<string>();
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   detectFiles(event) {
     this.urls = [];
     const files = event.target.files;
@@ -20,9 +26,4 @@ export class AddPetComponent implements OnInit {
       }
     }
   }
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

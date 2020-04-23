@@ -1,0 +1,14 @@
+
+$primary-color: #47c2d2;
+$dark-primary: #47b4c9;
+$dark-secondary: #6c64b0;
+$secondary-color: #7c7db7;
+$domain: #2e3393;
+$light-grey: #f2f2f2;
+
+$theme-colors: (
+  "primary": $dark-primary,
+  "secondary": $secondary-color
+);
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
