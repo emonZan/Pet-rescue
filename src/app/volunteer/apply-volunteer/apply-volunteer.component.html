@@ -1,1 +1,191 @@
-<p>apply-volunteer works!</p>
+<div class="container">
+    <form class="form-container bg-white">
+        <!-- 合理安排输入框的顺序 -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">真实姓名*</label>
+                <input type="text" class="form-control form-control-lg" id="name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="species">微信昵称*</label>
+                <input type="text" class="form-control form-control-lg" id="wechatName">
+                <small id="emailHelp" class="form-text text-muted">用于活动现场的签到标识</small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">微信号（方便志愿者和您联系）*</label>
+                <input type="text" class="form-control form-control-lg" id="wechatNumber">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="age">出生年月*</label>
+                <input type="text" class="form-control form-control-lg" id="birth">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="species">微信二维码*</label>
+                <!-- 做成那种可以删除的，小预览图 -->
+                <input type="file" id="wechatImg" name="img" accept="image/*">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="sex">性别（便于志愿者工作强度的分配）*</label>
+                <div class="input-group mb-3">
+                    <select class="form-control form-control-lg" id="sexSelect">
+                        <option>--</option>
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">联系电话（活动现场方便联系沟通）*</label>
+                <input type="text" class="form-control form-control-lg" id="phone">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">邮箱（方便接收报名反馈）</label>
+                <input type="text" class="form-control form-control-lg" id="colorInput">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">住所所在区（方便我们对志愿者工作的分配）*</label>
+                <input type="text" class="form-control form-control-lg" id="phone" placeholder="嘉定区">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">特长（任何您身上的闪光点）*</label>
+                <input type="text" class="form-control form-control-lg" id="colorInput">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">本职工作（您从事/擅长的工作领域，也许在其他方面我们也可以合作）*</label>
+                <input type="text" class="form-control form-control-lg" id="phone">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">你希望/擅长哪一类志愿工作？(线上运营团队主要负责微信公众号，微博以及合作的洽谈等等)*</label>
+                <select class="form-control form-control-lg" id="sexSelect">
+                    <option>--</option>
+                    <option>线上运营团队</option>
+                    <option>线下领养日活动团队</option>
+                    <option>市场资源</option>
+                    <!-- TODO: add comments -->
+                    <option>其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">线上职位*</label>
+                <select class="form-control form-control-lg" id="sexSelect">
+                    <option>--</option>
+                    <option>市场专员</option>
+                    <option>微信微博运营</option>
+                    <option>微信微博文案</option>
+                    <option>平面设计师</option>
+                    <option>数据库管理</option>
+                    <option>品牌合作</option>
+                    <option>义工管理培训</option>
+                    <option>电商运营</option>
+                    <option>平台客服</option>
+                    <option>公益讲座</option>
+                    <option>TNR项目</option>
+                    <option>宠物医疗科普</option>
+                    <option>外语翻译</option>
+                    <!-- TODO: add comments -->
+                    <option>其他</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">线下职位*</label>
+                <select class="form-control form-control-lg" id="sexSelect">
+                    <option>--</option>
+                    <option>领养活动策划及执行</option>
+                    <option>猫区义工</option>
+                    <option>狗区义工</option>
+                    <option>义卖区义工</option>
+                    <option>领养审核</option>
+                    <option>活动主持</option>
+                    <option>后勤人员</option>
+                    <option>摄影摄像</option>
+                    <option>直播平台</option>
+                    <option>运输&仓库</option>
+                    <option>才艺表演</option>
+                    <!-- TODO: add comments -->
+                    <option>其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">从哪里看到的志愿者信息？*</label>
+                <select class="form-control form-control-lg" id="sexSelect">
+                    <option>--</option>
+                    <option>微信公众号</option>
+                    <option>微博</option>
+                    <option>抖音</option>
+                    <option>朋友推荐</option>
+                    <option>搜索</option>
+                    <option>活动现场</option>
+                    <!-- TODO: add comments -->
+                    <option>其他</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">是否参加过其他公益活动的志愿者？*</label>
+                <input type="text" class="form-control form-control-lg" id="colorInput">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="character">是否养过宠物*</label>
+                <select class="form-control form-control-lg" id="sexSelect">
+                    <option>--</option>
+                    <option>猫</option>
+                    <option>狗</option>
+                    <!-- TODO: add comments -->
+                    <option>其他</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="color">如果养过宠物（猫/狗），是否做了绝育或者计划要去做？</label>
+                <input type="text" class="form-control form-control-lg" id="colorInput">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">你对发展流浪动物保护的公益事业的建议和想法？*</label>
+            <textarea class="form-control" id="commentsInput" row="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="comments">你为什么要来做义工？*</label>
+            <textarea class="form-control" id="commentsInput" row="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="comments">请写一下你多流浪猫狗以及家养猫狗的绝育有什么看法（请注意，流浪动物和家养宠物都需要写到）？*</label>
+            <!-- 20字 -->
+            <textarea class="form-control" id="commentsInput" row="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="comments">你愿意花多少时间参与志愿者工作？*</label>
+            <textarea class="form-control" id="commentsInput" row="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="comments">如果要养宠物，您自己是否会领养代替购买？</label>
+            <select class="form-control form-control-lg" id="sexSelect">
+                <option>--</option>
+                <option>我会领养一只投缘的猫狗</option>
+                <option>我还是会购买自己喜欢的品种猫狗</option>
+                <!-- TODO: add comments -->
+                <option>其他</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">您有什么想对我们说的吗？*</label>
+            <textarea class="form-control" id="commentsInput" row="3"></textarea>
+        </div>
+        <button type="btn btn-primary btn-lg" class="btn btn-primary">提交</button>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+{
+    "petID": "01",
+    "name": "点点",
+    "sex": "母",
+    "species": "猫",
+    "breed": "田园猫",
+    "age": "3岁",
+    "weight": "",
+    "color": "",
+    "birth": "",
+    "address": "上海浦东新区 张江镇",
+    "neutered": true,
+    "story": "",
+    "contactInfo": {
+        "name": "emon",
+        "phone": "18817",
+        "wechatNumber": "hi-fxh",
+        "address": "上海浦东新区 张江镇"
+    },
+    "image": []
+}

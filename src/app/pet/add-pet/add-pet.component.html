@@ -1,45 +1,58 @@
 <div class="container">
-    <form>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="nameInput" placeholder="Pet Name">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="species">Species</label>
-          <input type="text" class="form-control" id="speciesInput" placeholder="Pet Species">
+  <form class="bg-white">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">宠物名字</label>
+        <input type="text" class="form-control form-control-lg" id="nameInput">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="species">宠物类别</label>
+        <div class="input-group mb-3">
+          <select class="form-control form-control-lg" id="speciesSelect">
+            <option>--</option>
+            <option>猫</option>
+            <option>狗</option>
+            <option>其它</option>
+          </select>
         </div>
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="sex">Sex</label>
-          <input type="text" class="form-control" id="sexInput" placeholder="Pet Sex">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="age">Age</label>
-          <input type="text" class="form-control" id="ageInput" placeholder="Pet Age">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="character">Character</label>
-          <input type="text" class="form-control" id="characterInput" placeholder="Pet Character">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="color">Color</label>
-          <input type="text" class="form-control" id="colorInput" placeholder="Pet Color">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="sex">性别</label>
+        <div class="input-group mb-3">
+          <select class="form-control form-control-lg" id="speciesSelect">
+            <option>--</option>
+            <option>公</option>
+            <option>母</option>
+          </select>
         </div>
       </div>
-      <div class="form-group">
-        <label for="comments">Comments</label>
-        <textarea class="form-control" id="commentsInput" row="3"></textarea>
+      <div class="form-group col-md-6">
+        <label for="age">年龄</label>
+        <input type="text" class="form-control form-control-lg" id="ageInput">
       </div>
-      <div class="form-group">
-          <div>
-              <img *ngFor="let url of urls" [src]="url" class="rounded mb-3" width="180">
-            </div>
-            <input type="file" multiple (change)="detectFiles($event)">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="character">性格</label>
+        <input type="text" class="form-control form-control-lg" id="characterInput">
       </div>
-      <button type="button" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+      <div class="form-group col-md-6">
+        <label for="color">颜色</label>
+        <input type="text" class="form-control form-control-lg" id="colorInput">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="comments">备注</label>
+      <textarea class="form-control" id="commentsInput" row="3"></textarea>
+    </div>
+    <div class="form-group">
+      <div>
+        <img *ngFor="let url of urls" [src]="url" class="rounded mb-3" width="180">
+      </div>
+      <input type="file" multiple (change)="detectFiles($event)">
+    </div>
+    <button type="btn btn-primary btn-lg" class="btn btn-primary">提交</button>
+  </form>
+</div>

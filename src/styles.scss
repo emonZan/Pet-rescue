@@ -12,7 +12,32 @@ form {
   border-radius: 1rem;
   padding: 2rem;
 }
+ .content {
+  padding-bottom: 6rem;
+ }
+.container, .container-fluid {
+  margin-top: 2rem;
+}
 
+.well {
+  padding: 20px;
+  background-color: #fff;;
+}
+
+hr {
+  margin: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  flex: 1 1 auto;
+}
+a {
+  color: #47c2d2;
+}
 // primary": #47c2d2,
 // "secondary": #7c7db7
 //  dark theme: #47b4c9
